@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Abstract</title>
+</head>
+<body>
+
+    <!--Top bar-->
+    <div class="topbar">
+        <img class="topbar-logo" src="/topbar logo.svg">
+        <span class="pagename">
+            | <a class="pagename-link">Help Center</a>
+        </span>
+
+        <button class="requestbtn">Submit a request</button>
+        <button class="loginbtn">Sign in</button>
+
+        <!--icons for mobile and tablets-->
+
+        <img class="search-icon" src="/search-svgrepo-com.svg">
+
+        <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+            <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+              <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+              <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+            </path>
+            <rect width="10" height="10" stroke="none">
+              <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+            </rect>
+            <rect width="10" height="10" stroke="none">
+              <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+              <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+            </rect>
+          </svg>
+
+
+    </div>
+
+    <!--Hero Section-->
+
+    <section class="hero">
+        <h2 class="hero-question">How can we help?</h2>
+        <div class="search-form">
+            <form>
+            <input class="hero-search" type="search" placeholder="Search">
+            <input class="search-arrow" type="image" src="/right-arrow-svgrepo-com.svg">
+            <!-- <a href="#"><img class="search-arrow" src="/right-arrow-svgrepo-com.svg"></a> -->
+            </form>
+        </div>
+        
+
+    </section>
+    
+</body>
+</html>
